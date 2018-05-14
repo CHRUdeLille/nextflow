@@ -1,5 +1,7 @@
 # Nextflow+Singularity inside a singularity container
 
+Nextflow help us a lot ! More informations on https://www.nextflow.io
+
 ## Why this ? Are you schizophrenic ?
 We are working in a diagnostic environment and nextflow development is still very active! This is a good thing but we just wanted to be able to run our nextflow scripts in each of the environments corresponding to particular versions of nextflow & singularity.
 
