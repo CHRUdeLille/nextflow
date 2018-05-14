@@ -1,8 +1,7 @@
-# nextflow
-Nextflow environment containerized
+# Nextflow inside singularity container
 
 ## Why this ? Are you schizophrenic ?
-We work in a diagnostic environment and nextflow development is still very active! This is a good thing but we just wanted to be able to run our nextflow scripts in each of the environments corresponding to particular versions of nextflow & singularity.
+We are working in a diagnostic environment and nextflow development is still very active! This is a good thing but we just wanted to be able to run our nextflow scripts in each of the environments corresponding to particular versions of nextflow & singularity.
 
 ## Is there any limitation ?
 For the moment, you can only use the local executor. We plan to add a slurm client.
