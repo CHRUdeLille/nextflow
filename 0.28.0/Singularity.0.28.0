@@ -5,7 +5,7 @@ Bootstrap: docker
 From: nextflow/nextflow:0.28.0
 
 %labels
-  MAINTAINER fabrice.bonte@chru-lille.fr
+  MAINTAINER christophe.demay@chru-lille.fr
   CONTAINER_VERSION 0.0.1
   SINGULARITY_VERSION 2.4.6
   NEXTFLOW_VERSION 0.28.0
