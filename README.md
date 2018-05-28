@@ -1,3 +1,5 @@
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/1014)
+
 # Nextflow+Singularity inside a singularity container
 
 Nextflow and Singularity help us a lot ! More informations on https://www.nextflow.io and https://singularity.lbl.gov/
