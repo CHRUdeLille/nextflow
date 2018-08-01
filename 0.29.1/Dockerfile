@@ -16,9 +16,9 @@ RUN apk update \
     && rm -rf singularity-${SINGULARITY_VERSION} \
     && ldconfig /opt/singularity/lib/singularity \
     && ln -s /opt/singularity/bin/singularity /usr/bin/singularity \
+    && curl -fSsL https://raw.githubusercontent.com/Zhuvikin/md5deep-alpine/master/md5deep > /usr/local/md5deep \
+    && chmod +x /usr/local/md5deep \
     && apk del --purge \
         curl file build-base autoconf automake libtool linux-headers
-
-RUN curl -fSsL https://raw.githubusercontent.com/Zhuvikin/md5deep-alpine/master/md5deep > /usr/local/md5deep && chmod +x /usr/local/md5deep
 
 RUN sed -i "s:bind path = /etc/localtime:#&:" /opt/singularity/etc/singularity/singularity.conf
