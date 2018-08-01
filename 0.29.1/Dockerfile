@@ -18,3 +18,5 @@ RUN apk update \
     && ln -s /opt/singularity/bin/singularity /usr/bin/singularity \
     && apk del --purge \
         curl file build-base autoconf automake libtool linux-headers
+
+RUN sed -i "s:bind path = /etc/localtime:#&:" /opt/singularity/etc/singularity/singularity.conf
