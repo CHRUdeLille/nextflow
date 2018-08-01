@@ -19,6 +19,6 @@ RUN apk update \
     && apk del --purge \
         curl file build-base autoconf automake libtool linux-headers
 
-RUN curl -fSsL https://raw.githubusercontent.com/Zhuvikin/md5deep-alpine/master/md5deep > /usr/local/bin/md5deep && chmod +x /usr/local/bin/md5deep
+RUN curl -fSsL https://raw.githubusercontent.com/Zhuvikin/md5deep-alpine/master/md5deep > /usr/bin/md5deep && chmod +x /usr/bin/md5deep
 
 RUN sed -i "s:bind path = /etc/localtime:#&:" /opt/singularity/etc/singularity/singularity.conf
